@@ -1,9 +1,6 @@
 "use client"
 import React from 'react';
-import Video from 'next-video';
-// import bgVideo from 'https://vimeo.com/942804367';
-import bgVideo from '../../videos/bgVideo.mp4';
-import BackgroundVideo from 'next-video/background-video';
+
 
 const HeroPage = () => {
   return (
