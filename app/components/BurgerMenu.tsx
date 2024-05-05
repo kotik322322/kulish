@@ -12,7 +12,7 @@ const BurgerMenu = () => {
   return (
     <div className="">
       <BurgerMenuButton  toggleMenu={toggleMenu} isOpen={isOpen}/>
-      {isOpen && <BurgerMenuContent/>}
+      <BurgerMenuContent isOpen={isOpen}/>
     </div>
   );
 };

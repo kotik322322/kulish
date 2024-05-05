@@ -13,7 +13,7 @@ const BurgerMenuButton = ({ toggleMenu, isOpen }: BurgerMenuButtonProps) => {
         onClick={toggleMenu}>
         <span
           className={`bg-accent h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
-            isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5'
+            isOpen ? 'rotate-45 translate-y-1 bg-white' : '-translate-y-0.5'
           }`}
         />
         <span
@@ -21,7 +21,7 @@ const BurgerMenuButton = ({ toggleMenu, isOpen }: BurgerMenuButtonProps) => {
         />
         <span
           className={`bg-accent h-0.5 w-6 rounded-sm transition-all duration-300 ease-out ${
-            isOpen ? '-rotate-45 -translate-y-1' : 'translate-y-0.5'
+            isOpen ? '-rotate-45 -translate-y-1 bg-white' : 'translate-y-0.5'
           }`}
         />
       </button>
