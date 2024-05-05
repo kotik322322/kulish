@@ -21,9 +21,6 @@ const BurgerMenuContent = ({ isOpen }: BurgerMenuContentProps) => {
             <CustomLink title="Content" href="/about" />
             <CustomLink title="Contact" href="/about" />
             <CustomLink title="Gallery" href="/about" />
-            {/* <CustomLink title="Content" href="/" /> */}
-            {/* <CustomLink title="Contact" href="/" /> */}
-            {/* <CustomLink title="Gallery" href="/" /> */}
           </ul>
         </motion.div>
       )}

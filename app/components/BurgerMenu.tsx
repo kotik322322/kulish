@@ -8,6 +8,7 @@ const BurgerMenu = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+    document.documentElement.classList.toggle('scroll-locked', !isOpen);
   };
   return (
     <div className="">
