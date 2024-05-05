@@ -1,16 +1,12 @@
+"use client"
 import React from 'react';
 import Video from 'next-video';
-import bgVideo from '../../videos/bgVideo.mp4';
+import bgVideo from '/bgVideo.webm';
+import BackgroundVideo from 'next-video/background-video';
 
 const HeroPage = () => {
   return (
-    <video
-      autoPlay
-      muted
-      loop
-      className="">
-      <source src="/bgVideo.webm" type="video/webm" />
-    </video>
+    <video src="/bgVideo.webm" autoPlay muted/>
   );
 };
 
