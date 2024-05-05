@@ -3,7 +3,15 @@ import Video from 'next-video';
 import bgVideo from '../../videos/bgVideo.mp4';
 
 const HeroPage = () => {
-  return <video src="/bgVideo.mp4" loop autoPlay muted className="" />;
+  return (
+    <video
+      autoPlay
+      muted
+      loop
+      className="">
+      <source src="/bgVideo.webm" type="video/webm" />
+    </video>
+  );
 };
 
 export default HeroPage;
