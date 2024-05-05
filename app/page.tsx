@@ -1,3 +1,4 @@
+import BurgerMenu from './components/BurgerMenu';
 import HeroPage from './components/HeroPage';
 import Logo from './components/Logo';
 
@@ -5,6 +6,7 @@ export default function Home() {
   return (
     <main className="w-full h-screen relative">
       <Logo/>
+      <BurgerMenu/>
       <HeroPage/>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quo in ullam laborum laboriosam fugiat nihil minus suscipit obcaecati, aut voluptatem vel dolor, non neque ab, modi quia excepturi unde!
       Neque repudiandae, delectus facilis veritatis sit eligendi cumque ad nobis necessitatibus consectetur nesciunt ipsum quaerat, obcaecati sint exercitationem? Alias, reprehenderit! Impedit dolores rerum laboriosam, molestiae dignissimos ratione adipisci optio dolorum!

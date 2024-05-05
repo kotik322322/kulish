@@ -10,6 +10,9 @@ const config: Config = {
     extend: {
       backgroundImage: {
       },
+      colors: {
+        accent: "#E3502A"
+      }
     },
   },
   plugins: [],
