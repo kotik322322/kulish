@@ -2,3 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+/* .embla__slide {
+  flex: 0 0 80%;
+  min-width: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+} */
+
+.embla__slide {
+  flex: 0 0 80%; /* Default slide covers 100% of the viewport */
+  min-width: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 33%; /* Breakpoint SM slide covers 50% of the viewport */
+  }
+}
