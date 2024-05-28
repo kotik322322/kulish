@@ -14,13 +14,13 @@ import slip7 from '../../public/slip7.jpg';
 import slip8 from '../../public/slip8.jpg';
 
 const images = [
-  { img: slip1 },
-  { img: slip2 },
-  { img: slip3 },
-  { img: slip4 },
-  { img: slip6 },
-  { img: slip7 },
-  { img: slip8 },
+  { img: slip1, id:"1" },
+  { img: slip2, id:"2" },
+  { img: slip3, id:"3" },
+  { img: slip4, id:"4" },
+  { img: slip6, id:"5" },
+  { img: slip7, id:"6" },
+  { img: slip8, id:"7" },
 ];
 const BestSectionSlider = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 2000 })]);
@@ -35,7 +35,7 @@ const BestSectionSlider = () => {
 
   return (
     <div className="embla">
-      <div className="w-[100px] ml-auto py-4 flex justify-center gap-x-3">
+      <div className="w-[100px] ml-auto py-4 flex justify-center gap-x-4">
         <button className="embla__prev" onClick={scrollPrev}>
           <HiOutlineArrowLongLeft className='font-thin text-3xl text-[#655b59]'/>
         </button>
@@ -46,8 +46,8 @@ const BestSectionSlider = () => {
 
       <div className="embla__viewport h-full" ref={emblaRef}>
         <div className="embla__container">
-          {images.map(({ img }, index) => (
-            <div className="embla__slide " key={index}>
+          {images.map(({ img, id }) => (
+            <div className="embla__slide " key={id}>
               <Image src={img} alt="" width={400} height={300} className='rounded-md'/>
             </div>
           ))}
