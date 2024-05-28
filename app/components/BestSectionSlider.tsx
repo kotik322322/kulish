@@ -46,8 +46,8 @@ const BestSectionSlider = () => {
 
       <div className="embla__viewport h-full" ref={emblaRef}>
         <div className="embla__container">
-          {images.map(({ img }) => (
-            <div className="embla__slide ">
+          {images.map(({ img }, index) => (
+            <div className="embla__slide " key={index}>
               <Image src={img} alt="" width={400} height={300} className='rounded-md'/>
             </div>
           ))}
