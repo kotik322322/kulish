@@ -8,6 +8,7 @@ import slip1 from '../../public/slip1.jpg';
 import slip2 from '../../public/slip2.jpg';
 import slip3 from '../../public/slip3.jpg';
 import BestSectionSlider from './BestSectionSlider';
+import AboutSection from './AboutSection';
 
 const BestSection = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 2000 })]);
@@ -23,7 +24,7 @@ const BestSection = () => {
   return (
     <div className=" h-screen">
           <BestSectionSlider/>
-
+          <AboutSection/>
 
     </div>
   );

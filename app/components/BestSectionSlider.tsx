@@ -14,13 +14,13 @@ import slip7 from '../../public/slip7.jpg';
 import slip8 from '../../public/slip8.jpg';
 
 const images = [
-  { img: slip1, id:"1" },
-  { img: slip2, id:"2" },
-  { img: slip3, id:"3" },
-  { img: slip4, id:"4" },
-  { img: slip6, id:"5" },
-  { img: slip7, id:"6" },
-  { img: slip8, id:"7" },
+  { img: slip1, id: '1' },
+  { img: slip2, id: '2' },
+  { img: slip3, id: '3' },
+  { img: slip4, id: '4' },
+  { img: slip6, id: '5' },
+  { img: slip7, id: '6' },
+  { img: slip8, id: '7' },
 ];
 const BestSectionSlider = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 2000 })]);
@@ -35,20 +35,23 @@ const BestSectionSlider = () => {
 
   return (
     <div className="embla">
-      <div className="w-[100px] ml-auto py-4 flex justify-center gap-x-4">
-        <button className="embla__prev" onClick={scrollPrev}>
-          <HiOutlineArrowLongLeft className='font-thin text-3xl text-[#655b59]'/>
-        </button>
-        <button className="embla__next" onClick={scrollNext}>
-          <HiOutlineArrowLongRight className='font-thin text-3xl text-[#655b59]'/>
-        </button>
+      <div className="mx-4 py-4 flex justify-between items-center">
+        <h2 className='font-medium text-xl text-[#655b59]'>My Best</h2>
+        <div className='flex items-center justify-center gap-x-5'>
+          <button className="embla__prev" onClick={scrollPrev}>
+            <HiOutlineArrowLongLeft className="font-thin text-3xl text-[#655b59]" />
+          </button>
+          <button className="embla__next" onClick={scrollNext}>
+            <HiOutlineArrowLongRight className="font-thin text-3xl text-[#655b59]" />
+          </button>
+        </div>
       </div>
 
       <div className="embla__viewport h-full" ref={emblaRef}>
         <div className="embla__container">
           {images.map(({ img, id }) => (
             <div className="embla__slide " key={id}>
-              <Image src={img} alt="" width={400} height={300} className='rounded-md'/>
+              <Image src={img} alt="" width={400} height={300} className="rounded-md" />
             </div>
           ))}
         </div>
