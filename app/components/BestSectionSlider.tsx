@@ -35,7 +35,7 @@ const BestSectionSlider = () => {
 
   return (
     <div className="embla">
-      <div className="w-[100px] ml-auto py-1 flex justify-center gap-x-3">
+      <div className="w-[100px] ml-auto py-4 flex justify-center gap-x-3">
         <button className="embla__prev" onClick={scrollPrev}>
           <HiOutlineArrowLongLeft className='font-thin text-3xl text-[#655b59]'/>
         </button>
